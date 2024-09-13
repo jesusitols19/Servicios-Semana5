@@ -1,0 +1,20 @@
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Lista de Personas</h2>
+
+    <div class="row">
+        @for (item of listaPersonas; track item.edad) {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.nombre }}</h5>
+                        <p class="card-text"><strong>Edad:</strong> {{ item.edad }}</p>
+                        <p class="card-text"><strong>Correo:</strong> {{ item.correo }}</p>
+                        <p class="card-text"><strong>Teléfono:</strong> {{ item.telefono }}</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
